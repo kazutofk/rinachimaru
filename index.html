@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>品詞テスト</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <h1>品詞テスト</h1>
+    <div id="quiz-container">
+        <p id="part-of-speech-display"></p>
+        <label for="category-input">カテゴリを英語で入力:</label>
+        <input type="text" id="category-input">
+        <button onclick="checkAnswer()">回答</button>
+    </div>
+    <div id="result-container" class="hidden">
+        <p id="result-display"></p>
+        <button onclick="retryMistakes()">間違えた品詞を再挑戦</button>
+    </div>
+    <div id="final-result-container" class="hidden">
+        <p>テスト結果</p>
+        <ul id="final-result-list"></ul>
+    </div>
+    <button onclick="showFinalResults()" class="hidden" id="show-results-button">結果を表示</button>
+    <script src="quiz.js"></script>
+</body>
+</html>
